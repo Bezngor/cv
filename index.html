@@ -2,93 +2,99 @@
 <head>
     <meta charset="UTF-8">
     <title>Vladimir CV</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <table cellspacing="15">
-        <tr>
-            <td>
-                <img src="IMG_4685.jpg" alt=" ...здесь должна быть моя фотка..." width="200">
-            </td>
-            <td>
+
+    <div class="container">
+        <div class="info">
+            <img src="IMG_4685.jpg" alt=" ...здесь должна быть моя фотка..."  class="avatar">
+
+            <div class="info-text">
                 <h1>Владимир Безносов</h1>
-                <p><em>Директор по развитию <strong>ООО "Midex Group"</strong></em></p>
+                <p>Директор по развитию <strong>ООО "Midex Group"</strong></p>
                 <p>Занимаюсь планированием производства</p>
-            </td>          
-        </tr>
-    </table>
-    
-    
 
-    <hr />
+                <h4>Мои социальные сети</h4>
+                    <a href="https://www.facebook.com/vladimir.pirineos.1/" target="_blank">facebook</a>
+                    |
+                    <a href="https://www.instagram.com/vladimirpirineos/" target="_blank">instagram</a>
+                </div>
+            </div>
 
-    <h2>Опыт работы</h2>
-    <table>
-        <tr>
-            <th>Компания</th>
-            <th>Должность</th>
-            <th>Год</th>
-        </tr>
-        <tr>
-            <td>Гедеон</td>
-            <td>Зам.директора</td>
-            <td>2011-2012</td>
-        </tr>
-        <tr>
-            <td>Стройзаказ</td>
-            <td>Директор</td>
-            <td>2016-2016</td>
-        </tr>
-        <tr>
-            <td>Мидэкс групп</td>
-            <td>Директор по развитию</td>
-            <td>2017-...</td>
-        </tr>
-    </table>
+        <div class="card bg-yellow">          
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Путешествия</li>
+                <li>Велоспорт</li>
+                <li>Парапланеризм</li>
+                <li>Плавание</li>
+            </ol>
+        </div>  
 
-    <hr>
+        <div class="card bg-green">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <tr>
+                    <td>Универсал Транс Сервис</td>
+                    <td>Директор</td>
+                    <td>2009-2011</td>
+                </tr>
+                <tr>
+                    <td>Гедеон</td>
+                    <td>Зам.директора</td>
+                    <td>2011-2012</td>
+                </tr>
+                <tr>
+                    <td>Стройзаказ</td>
+                    <td>Директор</td>
+                    <td>2016-2016</td>
+                </tr>
+                <tr>
+                    <td>Мидэкс групп</td>
+                    <td>Директор по развитию</td>
+                    <td>2017-...</td>
+                </tr>
+            </table>
+        </div>
 
-    <h2>Мои навыки</h2>
-    <ul>
-        <li><a href="https://youtu.be/Mv_PTfOO0y0" target="_blank">Java</a></li>
-        <li><a href="https://youtu.be/xybmKzQ5s4c" target="_blank">SQL</a></li>
-    </ul>
+        <div class="card bg-red">
+            <h2>Мои достижения</h2>
+            <ul class="link-list">
+                <li>
+                    <a href="https://youtu.be/dpD6W6cURD8" target="blank">Работа в Java</a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/43QLoknvpy4" target="blank">Работа в SQL</a>
+                </li>
+            </ul>
+        </div>
 
-    <hr>
+        <div class="contact">
+            <h2>Связаться со мной</h2>
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" placeholder="Введите ваше имя...">
+                    </div>
 
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Путешествия</li>
-        <li>Велоспорт</li>
-        <li>Парапланеризм</li>
-        <li>Плавание</li>
-    </ol>
+                    <div class="form-group">
+                        <label for="email">Ваш Email</label>
+                        <input type="text" id="email" placeholder="Введите email...">
+                    </div>
+                </div>
 
-    <hr>
+                <div class="form-group">
+                    <Label for="text">Ваше сообщение</Label>
+                    <textarea id="text" cols="10" rows="3"></textarea>
+                </div>
 
-    <h2>Мои достижения</h2>
-    <a href="list.html" target="_blank">Посмотреть список</a>
+                <input class="btn" type="submit" value="Связаться!">
+            </form>
+        </div>
+    </div>
 
-    <hr>
-
-    <h2>Связаться со мной</h2>
-    <form action="/">
-        <label for="name">Ваше имя</label>
-        <input type="text" id="name" placeholder="Введите ваше имя...">
-
-        <br>
-
-        <label for="email">Ваш Email</label>
-        <input type="text" id="email" placeholder="Введите email...">
-
-        <br>
-
-        <Label for="text">Ваше сообщение</Label>
-        <br>
-        <textarea id="text" cols="30" rows="10"></textarea>
-        <br>
-
-        <input type="submit" value="Связаться!">
-    </form>
-
+    <div style="margin-bottom: 500px;"></div>
 </body>
 </html>
